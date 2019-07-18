@@ -8,3 +8,12 @@ exports.createPost = [
     .trim()
     .isLength({ min: 5 })
 ];
+
+exports.updatePost = [
+  check('title')
+    .trim()
+    .isLength({ min: 5 }),
+  check('content')
+    .trim()
+    .isLength({ min: 5 })
+];
