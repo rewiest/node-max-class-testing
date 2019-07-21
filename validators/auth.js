@@ -24,3 +24,10 @@ exports.signup = [
     .not()
     .isEmpty()
 ];
+
+exports.updateUserStatus = [
+  check('status')
+    .trim()
+    .not()
+    .isEmpty()
+];
